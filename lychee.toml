@@ -76,8 +76,6 @@ headers = []
    "hdfs://*",
    "mysql:*",
    "postgresql:*",
-   "file:///home/*",
-   "file:///tmp/*",
    "jdbc:*",
    ]
 
