@@ -78,13 +78,7 @@ headers = []
    "postgresql:*",
    "file:///home/*",
    "file:///tmp/*",
-   "http*be_host*",
-   "http:///be_host*",
    "jdbc:*",
-   "http:/host*",
-   "http://host*",
-   "http://ip*",
-   "http:/ip*",
    ]
 
 # Exclude these filesystem paths from getting checked.
