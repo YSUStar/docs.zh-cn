@@ -72,12 +72,24 @@ headers = []
 
 # Exclude URLs from checking (supports regex)
 
-# exclude = [
-#   "https://bob:secret@proxy.company.com:12345",
-#   "https://github.com/balena-io/balena-cli/releases/download/*",
-#   "file://*",
-#   "system@*",
-#   ]
+ exclude = [
+   "hdfs://*",
+   "file://或hdfs://*",
+   "mysql:*",
+   "postgresql:*",
+   "file:///home/*",
+   "file:///tmp/*",
+   "http*be_host*",
+   "http:///be_host*",
+   "http:///be_host:http_port*",
+   "http:///be_host:http_port/api/*",
+   "http:///be_host:http_port/api/update_config*",
+   "jdbc:*",
+   "http:/host*",
+   "http://host*",
+   "http://ip*",
+   "http:/ip*",
+   ]
 
 # Exclude these filesystem paths from getting checked.
 # We exclude StarRocks_intro as it generates the URLs
