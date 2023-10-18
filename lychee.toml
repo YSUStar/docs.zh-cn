@@ -74,16 +74,12 @@ headers = []
 
  exclude = [
    "hdfs://*",
-   "file://或hdfs://*",
    "mysql:*",
    "postgresql:*",
    "file:///home/*",
    "file:///tmp/*",
    "http*be_host*",
    "http:///be_host*",
-   "http:///be_host:http_port*",
-   "http:///be_host:http_port/api/*",
-   "http:///be_host:http_port/api/update_config*",
    "jdbc:*",
    "http:/host*",
    "http://host*",
