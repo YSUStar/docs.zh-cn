@@ -16,7 +16,7 @@ jobs:
     - name: docusaurus-mdx-checker
       if: always()
       run: |
-        npx docusaurus-mdx-checker -c docs
+        npx docusaurus-mdx-checker
     - name: link check
       if: always()
       uses: lycheeverse/lychee-action@v1.8.0
