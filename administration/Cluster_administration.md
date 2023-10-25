@@ -245,7 +245,7 @@ BE、FE启动顺序不能颠倒。因为如果升级导致新旧 FE、BE 不兼�
 
 4. 备份meta_dir元数据信息  
   
-    a. 将标准版的/fe/conf/fe.conf中设置的meta_dir目录进行备份，如未更改过配置文件中meta_dir属性，默认为“${DSDB_HOME}/doris-meta”；下例中设置为“${DSDB_HOME}/meta”,  
+    a. 将标准版的/fe/conf/fe.conf中设置的meta_dir目录进行备份，如未更改过配置文件中meta_dir属性，默认为`${DSDB_HOME}/doris-meta`；下例中设置为`${DSDB_HOME}/meta`,  
   
     b. 注意保证“命令中元数据目录”和“元数据实际目录”还有“配置文件”中一致，如您原目录名为“doris-meta”，建议您将目录重命名，同步需要更改配置文件  
   
