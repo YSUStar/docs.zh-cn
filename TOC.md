@@ -92,7 +92,6 @@
       + [CREATE RESOURCE](/sql-reference/sql-statements/data-definition/CREATE_RESOURCE.md)
       + [CREATE TABLE AS SELECT](/sql-reference/sql-statements/data-definition/CREATE_TABLE_AS_SELECT.md)
       + [CREATE TABLE LIKE](/sql-reference/sql-statements/data-definition/CREATE_TABLE_LIKE.md)
-      + [CREATE TABLE](/sql-reference/sql-statements/data-definition/CREATE_TABLE.md)
       + [CREATE VIEW](/sql-reference/sql-statements/data-definition/CREATE_VIEW.md)
       + [CREATE FUNCTION](/sql-reference/sql-statements/data-definition/create-function.md)
       + [DROP DATABASE](/sql-reference/sql-statements/data-definition/DROP_DATABASE.md)
