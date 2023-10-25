@@ -357,7 +357,7 @@ SELECT MY_SUM_INT(col1);
 ###### void windowUpdate(State state, int, int, int , int, ...)
 
 更新窗口数据。窗口函数的详细说明，请参见[窗口函数](../../sql-reference/sql-functions/Window_function.md)。输入每一行数据，都会获取到对应窗口信息来更新中间结果。
-        
+
 - peer_group_start：是当前分区开始的位置。
 分区：OVER子句中 PARTITION BY 指定分区列， 分区列的值相同的行被视为在同一个分区内。
 - peer_group_end：当前分区结束的位置。
@@ -366,11 +366,11 @@ SELECT MY_SUM_INT(col1);
 - frame_end：当前窗口框架（window frame）结束位置。
 - inputs：表示一个窗口中输入的数据，为包装类数组。包装类需要对应输入数据的类型，本示例中输入数据类型为 INT，因此包装类数组为 Integer[]。
 
-2. 执行`mvn package`，进行打包。
+1. 执行`mvn package`，进行打包。
 
    target 目录下会生成两个文件： `udf-1.0-SNAPSHOT.jar`、  `udf-1.0-SNAPSHOT-jar-with-dependencies.jar`。
 
-3. 将文件`udf-1.0-SNAPSHOT-jar-with-dependencies.jar`上传至 FE 和 BE 能访问的 HTTP 服务器，并且HTTP服务需要一直开启。
+2. 将文件`udf-1.0-SNAPSHOT-jar-with-dependencies.jar`上传至 FE 和 BE 能访问的 HTTP 服务器，并且HTTP服务需要一直开启。
 
     > 步骤三中， FE 会对 UDF 所在 Jar 包进行校验并计算校验值，BE 会下载 UDF 所在 Jar 包并执行。
 

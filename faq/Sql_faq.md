@@ -208,6 +208,7 @@ VARCHAR 是变长存储，存储跟数据实际长度有关，建表时指定不
 StarRocks 使用 keyword 数据类型对该查询语句进行转换。因为该列的数据 keyword 长度超过 256，所以无法查询该列。
 
 解决方案：去除该字段映射中的
+
   ```shell
             "fields": {
                    "keyword": {
