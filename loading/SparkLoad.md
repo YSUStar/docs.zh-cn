@@ -130,7 +130,7 @@ PROPERTIES 是 Spark 资源相关参数，如下：
 
 * `working_dir`: ETL 使用的目录。spark 作为 ETL 资源使用时必填。例如：hdfs://host: port/tmp/starrocks。
 * `broker`: broker 名字。spark 作为 ETL 资源使用时必填。需要使用 `ALTER SYSTEM ADD BROKER` 命令提前完成配置。
-* `broker.property_key`: broker 读取 ETL 生成的中间文件时需要指定的认证信息等，详细可参考 [BROKER LOAD](../sql-reference/sql-statements/data-manipulation/BROKER_LOAD)。
+* `broker.property_key`: broker 读取 ETL 生成的中间文件时需要指定的认证信息等，详细可参考 [BROKER LOAD](../sql-reference/sql-statements/data-manipulation/BROKER_LOAD.md)。
 
    其他 Resource 详细参数请参考 [CREATE RESOURCE](../sql-reference/sql-statements/data-definition/CREATE_RESOURCE.md)。
 
@@ -350,7 +350,7 @@ LoadFinishTime: 2019-07-27 11:50:16
     JobDetails: {"ScannedRows":28133395, "TaskNumber":1, "FileNumber":1,"FileSize":200000}
 ~~~
 
-返回结果集中参数的意义可参考 [查看导入状态](../sql-reference/sql-statements/data-manipulation/SHOW_LOAD#返回结果说明)。
+返回结果集中参数的意义可参考 [查看导入状态](../sql-reference/sql-statements/data-manipulation/SHOW_LOAD.md#返回结果说明)。
 
 ### 取消导入
 

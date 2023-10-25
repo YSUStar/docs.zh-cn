@@ -31,7 +31,7 @@ DROP DATABASE [IF EXISTS] db_name [FORCE]
 ## 参考文档
 
 - [CREATE DATABASE](../data-definition/CREATE_DATABASE.md)
-- [SHOW CREATE DATABASE](SHOW_CREATE_DATABASE.md)
+- [SHOW CREATE DATABASE](../data-manipulation/SHOW_CREATE_DATABASE.md)
 - [USE](../data-definition/USE.md)
 - [DESC](../Utility/DESCRIBE.md)
 - [SHOW DATABASES](../data-manipulation/SHOW_DATABASES.md)
