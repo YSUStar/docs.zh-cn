@@ -16,7 +16,7 @@ mysql -h <fe_host> -P9030 -u root
 
 > **注意**
 >
-> 在指定数据库名、表名和列名等变量时，如果使用了保留关键字，必须使用反引号 (`) 包裹，否则可能会产生报错。有关 StarRocks 的保留关键字列表，请参见[关键字](../keywords.md#保留关键字)。
+> 在指定数据库名、表名和列名等变量时，如果使用了保留关键字，必须使用反引号 (`) 包裹，否则可能会产生报错。有关 StarRocks 的保留关键字列表，请参见[关键字](../sql-reference/sql-statements/keywords.md#保留关键字)。
 
 ```sql
 CREATE DATABASE example_db;
@@ -113,7 +113,7 @@ StarRocks 表中支持多种字段类型，除以上示例中已经列举的字�
 
 #### 索引
 
-StarRocks 默认会给 Key 列创建稀疏索引加速查询，具体规则见 [排序键](/table_design/Sort_key.md)。支持的索引类型有 [Bitmap 索引](/table_design/Bitmap_index.md)，[Bloomfilter 索引](/table_design/Bloomfilter_index.md) 等。
+StarRocks 默认会给 Key 列创建稀疏索引加速查询，具体规则见 [排序键](/table_design/Sort_key.md)。支持的索引类型有 [Bitmap 索引](../using_starrocks/Bitmap_index.md)，[Bloomfilter 索引](../using_starrocks/Bloomfilter_index.md) 等。
 
 > 注意：索引创建对表模型和列有要求，详细说明见对应索引介绍章节。
 

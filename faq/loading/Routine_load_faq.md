@@ -22,7 +22,6 @@ min(alive_be_number, partition_number, desired_concurrent_number, max_routine_lo
 
 - `desired_concurrent_number`：Routine Load 导入作业时为单个导入作业设置较高的期望任务并行度，默认值为 3。
   - 如果还未创建导入作业，则需要在执行 [CREATE ROUTINE LOAD](../../sql-reference/sql-statements/data-manipulation/CREATE_ROUTINE_LOAD.md) 创建导入作业时，设置该参数。
-  - 如果已经创建导入作业，则需要执行 [ALTER ROUTINE LOAD](../../sql-reference/sql-statements/data-manipulation/alter-routine-load.md)，修改该参数。
 
 - `max_routine_load_task_concurrent_num`：Routine Load 导入作业的默认最大任务并行度的 ，默认值为 `5`。该参数为 FE 动态参数，更多说明和设置方式，请参见 [配置参数](../../administration/Configuration.md#导入和导出相关动态参数)。
 
