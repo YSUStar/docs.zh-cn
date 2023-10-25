@@ -108,14 +108,14 @@ StarRocks 支持对 Elasticsearch 表进行谓词下推，把过滤条件推给 
 
 | **SQL syntax**   | **Elasticsearch syntax**   |
 | ---------------- | ---------------------------|
-| =                | term query                 |
-| in               | terms query                |
-| \>=,  <=, >, <   | range                      |
-| and              | bool.filter                |
-| or               | bool.should                |
-| not              | bool.must_not              |
-| not in           | bool.must_not + terms      |
-| esquery          | ES Query DSL               |
+| `=`                | term query                 |
+| `in`               | terms query                |
+| `\>=,  <=, >, <`   | range                      |
+| `and`              | bool.filter                |
+| `or`               | bool.should                |
+| `not`              | bool.must_not              |
+| `not in`           | bool.must_not + terms      |
+| `esquery`          | ES Query DSL               |
 
 ### 查询示例
 

@@ -470,7 +470,7 @@ LoadFinishTime: 2019-07-27 11:50:16
 
 ### 查看Spark Launcher提交日志
 
-有时用户需要查看spark任务提交过程中产生的详细日志，日志默认保存在FE根目录下`log/spark_launcher_log`路径下，并以spark-launcher-{load-job-id}-{label}.log命名，日志会在此目录下保存一段时间，当FE元数据中的导入信息被清理时，相应的日志也会被清理，默认保存时间为3天。
+有时用户需要查看spark任务提交过程中产生的详细日志，日志默认保存在FE根目录下`log/spark_launcher_log`路径下，并以`spark-launcher-{load-job-id}-{label}.log`命名，日志会在此目录下保存一段时间，当FE元数据中的导入信息被清理时，相应的日志也会被清理，默认保存时间为3天。
 
 ### 取消导入
 
