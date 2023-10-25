@@ -102,7 +102,7 @@ CREATE [EXTERNAL] TABLE [IF NOT EXISTS] [database.]table_name
 
     * BITMAP_UNION(仅用于 BITMAP 列，为 BITMAP 独有的聚合方式)、
 
-    * REPLACE_IF_NOT_NULL：这个聚合类型的含义是当且仅当新导入数据是非NULL值时会发生替换行为，如果新导入的数据是NULL，那么StarRocks仍然会保留原值。
+    * REPLACE_IF_NOT_NULL：这个聚合类型的含义是当且仅当新导入数据是非NULL值时会发生替换行为，如果新导入的数据是NULL，那么 StarRocks 仍然会保留原值。
       注意：如果用在建表时REPLACE_IF_NOT_NULL列指定了NOT NULL，那么StarRocks仍然会将其转化NULL，不会向用户报错。用户可以借助这个类型完成「部分列导入」的功能。
       该类型只对聚合模型(key_desc的type为AGGREGATE KEY)有用，其它模型不能指这个。
     ```
