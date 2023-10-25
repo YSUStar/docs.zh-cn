@@ -330,7 +330,7 @@ Data Source配置简介
 ![8.10.2-2](../assets/8.10.2-2.png)
 
 * Name: 数据源的名称，自定义，比如 starrocks_monitor
-* URL: Prometheus 的 web 地址，如 <http://prometheus_host:9090>
+* URL: Prometheus 的 web 地址，如 `http://prometheus_host:9090`
 * Access: 选择 Server 方式，即通过 Grafana 进程所在服务器，访问 Prometheus。
 其余选项默认即可。
 
