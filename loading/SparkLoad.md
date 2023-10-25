@@ -118,7 +118,7 @@ PROPERTIES 是 Spark 资源相关参数，如下：
   * `spark.hadoop.yarn.resourcemanager.hostname.rm-id`: 对于每个 rm-id，指定 resource manager 对应的主机名。
   * `spark.hadoop.yarn.resourcemanager.address.rm-id`: 对于每个rm-id，指定 host:port 以供客户端提交作业。
   * 其他参数为可选，参考 [Spark Configuration](http://spark.apache.org/docs/latest/configuration.html)
-  * **working_dir**: ETL 使用的目录。spark作为ETL资源使用时必填。例如：hdfs://host:port/tmp/starrocks。
+  * **working_dir**: ETL 使用的目录。spark作为ETL资源使用时必填。例如：`hdfs://host:port/tmp/starrocks`。
   * **broker**: broker 名字。spark作为ETL资源使用时必填。需要使用`ALTER SYSTEM ADD BROKER` 命令提前完成配置。
   * `broker.property_key`: broker读取ETL生成的中间文件时需要指定的认证信息等。
 
