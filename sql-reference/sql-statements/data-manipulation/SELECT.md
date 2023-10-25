@@ -472,7 +472,7 @@ SELECT * FROM t1 WHERE [NOT] EXISTS (SELECT a FROM t2 WHERE t1.y = t2.b);
 SELECT name FROM table WHERE salary = (SELECT MAX(salary) FROM table);
 ```
 
-2.不相关标量子查询，谓词为>,<等。例如输出比平均工资高的人的信息。
+2.不相关标量子查询，谓词为`>,<`等。例如输出比平均工资高的人的信息。
 
 ```sql
 SELECT name FROM table WHERE salary > (SELECT AVG(salary) FROM table);

@@ -30,7 +30,7 @@ quota.high: high级别的资源分配。
 quota.low: low级别的资源分配。
 ```
 
-load_cluster.{cluster_name}.hadoop_palo_path: palo使用的hadoop目录，需要存放etl程序及etl生成的中间数据供palo导入。导入完成后会自动清理中间数据，etl程序自动保留下次使用。
+`load_cluster.{cluster_name}.hadoop_palo_path:` palo使用的hadoop目录，需要存放etl程序及etl生成的中间数据供palo导入。导入完成后会自动清理中间数据，etl程序自动保留下次使用。
 
 ```plain text
 load_cluster.{cluster_name}.hadoop_configs: hadoop的配置，其中fs.default.name、mapred.job.tracker、hadoop.job.ugi必须填写。

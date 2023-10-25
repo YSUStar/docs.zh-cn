@@ -51,7 +51,7 @@ BE和FE启动完成之后，需要检查进程状态，以确定服务正常启�
 
 * 运行 `http://be_host:be_http_port3/api/health`  确认BE启动状态
 
-  * 返回 {"status": "OK","msg": "To Be Added"} 表示启动正常。
+  * 返回 `{"status": "OK","msg": "To Be Added"}` 表示启动正常。
 
 * 运行 `http://fe_host:fe_http_port/api/bootstrap` 确认FE启动状态。
 
