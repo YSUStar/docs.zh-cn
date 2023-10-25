@@ -319,7 +319,7 @@ nohup ./bin/grafana-server \
 
 #### DashBoard配置
 
-登录grafana，即上一步配置的地址<http://grafana_host:8000>，默认用户名/密码为admin/admin。
+登录grafana，即上一步配置的地址`http://grafana_host:8000`，默认用户名/密码为admin/admin。
 
 **1.** 数据源配置
 
