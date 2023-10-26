@@ -80,7 +80,7 @@ GRANT
 ```SQL
 GRANT
     { ALTER | DROP | CREATE TABLE | CREATE VIEW | CREATE FUNCTION | CREATE MATERIALIZED VIEW | ALL [PRIVILEGES] } 
-    ON { DATABASE <db_name> [, <db_name>,...] | ALL DATABASES }
+    ON { DATABASE <database_name> [, <database_name>,...] | ALL DATABASES }
     TO { ROLE | USER} {<role_name>|<user_identity>} [ WITH GRANT OPTION ]
 ```
 
@@ -93,8 +93,8 @@ GRANT
     { ALTER | DROP | SELECT | INSERT | EXPORT | UPDATE | DELETE | ALL [PRIVILEGES]} 
     ON { TABLE <table_name> [, < table_name >,...]
        | ALL TABLES IN 
-           { { DATABASE <database_name> [,<database_name>,...] } | ALL DATABASES }
-    TO { ROLE | USER} {<role_name>|<user_identity>} [ WITH GRANT OPTION ];
+           { { DATABASE <database_name> [,<database_name>,...] } | ALL DATABASES }}
+    TO { ROLE | USER} {<role_name>|<user_identity>} [ WITH GRANT OPTION ]
 ```
 
 *注意：需要执行 SET CATALOG 之后才能使用。table 还可以用 `<db_name>.<table_name>` 的方式来进行表示。
@@ -110,8 +110,8 @@ GRANT
     { ALTER | DROP | SELECT | ALL [PRIVILEGES]} 
     ON { VIEW <view_name> [, < view_name >,...]
        ｜ ALL VIEWS IN 
-           { { DATABASE <database_name> [,<database_name>,...] }| ALL DATABASES }
-    TO { ROLE | USER} {<role_name>|<user_identity>} [ WITH GRANT OPTION ];
+           { { DATABASE <database_name> [,<database_name>,...] }| ALL DATABASES }}
+    TO { ROLE | USER} {<role_name>|<user_identity>} [ WITH GRANT OPTION ]
 ```
 
 *注意：需要执行 SET CATALOG 之后才能使用。view 还可以用 `<db_name>.<view_name>` 的方式来进行表示。
@@ -127,8 +127,8 @@ GRANT {
     { SELECT | ALTER | REFRESH | DROP | ALL [PRIVILEGES]} 
     ON { MATERIALIZED_VIEW <mv_name> [, < mv_name >,...]
        ｜ ALL MATERIALIZED_VIEWS IN 
-           { { DATABASE <database_name> [,<database_name>,...] }| ALL DATABASES }
-    TO { ROLE | USER} {<role_name>|<user_identity>} [ WITH GRANT OPTION ];
+           { { DATABASE <database_name> [,<database_name>,...] }| ALL DATABASES }}
+    TO { ROLE | USER} {<role_name>|<user_identity>} [ WITH GRANT OPTION ]
 ```
 
 *注意：需要执行 SET CATALOG 之后才能使用。物化视图还可以用 `<db_name>.<mv_name>` 的方式来进行表示。
@@ -144,14 +144,14 @@ GRANT {
     { USAGE | DROP | ALL [PRIVILEGES]} 
     ON { FUNCTION <function_name> [, < function_name >,...]
        ｜ ALL FUNCTIONS IN 
-           { { DATABASE <database_name> [,<database_name>,...] }| ALL DATABASES }
-    TO { ROLE | USER} {<role_name>|<user_identity>} [ WITH GRANT OPTION ];
+           { { DATABASE <database_name> [,<database_name>,...] }| ALL DATABASES }}
+    TO { ROLE | USER} {<role_name>|<user_identity>} [ WITH GRANT OPTION ]
 ```
 
 *注意：需要执行 SET CATALOG 之后才能使用。function 还可以用 `<db_name>.<function_name>` 的方式来进行表示。
 
 ```SQL
-GRANT <priv> ON FUNCTION <db_name>.<function_name> TO {ROLE <role_name> | USER <user_name>};
+GRANT <priv> ON FUNCTION <db_name>.<function_name> TO {ROLE <role_name> | USER <user_name>}
 ```
 
 #### User 相关
