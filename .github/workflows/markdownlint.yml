@@ -25,6 +25,7 @@ jobs:
     - run: rm -f ./docs/README.md
     - run: rm -f ./docs/feedback-and-contribute.md
     - run: rm -f ./docs/introduction/StarRocks_intro.md
+    - run: rm -f ./docs/TOC.md
 
     - uses: actions/setup-node@v3
       with:
