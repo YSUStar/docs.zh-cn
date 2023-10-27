@@ -20,9 +20,11 @@ jobs:
         path: 'docs'
 
     # The README and contrib files have some sample markdown that fails
-    # link checking
+    # link checking. StarRocks_intro.md uses a Gatsby component and will
+    # be replaced when we switch Gatsby off.
     - run: rm -f ./docs/README.md
     - run: rm -f ./docs/feedback-and-contribute.md
+    - run: rm -f ./docs/introduction/StarRocks_intro.md
 
     - uses: actions/setup-node@v3
       with:
