@@ -19,9 +19,10 @@ jobs:
       with:
         path: 'docs'
 
-    # The README file has some sample markdown that fails
+    # The README and contrib files have some sample markdown that fails
     # link checking
-    - run: rm ./docs/README.md
+    - run: rm -f ./docs/README.md
+    - run: rm -f ./docs/feedback-and-contribute.md
 
     - uses: actions/setup-node@v3
       with:
